@@ -17,6 +17,7 @@
     align-items: center;
     display: flex;
     font-size: 14px;
+    flex: auto;
     font-family: 'Ubuntu', sans-serif;
    
 }
@@ -74,13 +75,13 @@
 }
 
 .background{
-    background: rgba(0, 0,0, 0.7)url('https://cdn.hipwallpaper.com/i/15/50/rFRVYm.jpg');
+    background: rgba(0, 0,0, 0.7) url('https://cdn.hipwallpaper.com/i/15/50/rFRVYm.jpg');
     background-size: cover;
     background-blend-mode: darken;
 }
 
 .backgroundH{
-    background: rgba(0, 0,0, 0.7)url('https://wallpaperaccess.com/full/512859.jpg');
+    background: rgba(0, 0,0, 0.7) url('https://wallpaperaccess.com/full/512859.jpg');
     background-size: cover;
     background-blend-mode: darken;
 }
@@ -232,7 +233,6 @@
     font-size: 48px;
     font-family: 'Oswald', sans-serif;
 
-
 }
 
 
@@ -360,4 +360,24 @@
     cursor: pointer;   
     
  }
+ 
+
+
+.SnakerS{
+    padding: 22px;
+    margin: 66px auto;
+    border-radius: 23px;
+    color: black;
+    background-color: #f3f3f3;
+}
+
+
+.Mid{
+    align-items: center;
+    padding: 26px 23px;
+    justify-content: center;
+    display: flex;
+    margin: 30px 16px;
+
+}
  
