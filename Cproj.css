@@ -306,10 +306,10 @@
     border: 2px solid black;
     border-radius: 7px;
     padding: 7px 11px;
-    margin: auto
+    margin: auto;
+    cursor: pointer;   
 
 }
-
 
 .navbar_2st :hover{
     background-color: rgb(224, 224, 224);
@@ -364,11 +364,7 @@
 
 
 .SnakerS{
-    padding: 22px;
-    margin: 66px auto;
-    border-radius: 23px;
     color: black;
-    background-color: #f3f3f3;
 }
 
 
@@ -380,4 +376,51 @@
     margin: 30px 16px;
 
 }
- 
+.order_sec{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+
+}
+.order_sec2{
+    display: block;
+
+
+}
+
+.order_img img{
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order_img{
+    margin: 100px;
+    margin-right: 0px;
+
+
+}
+
+.qunatity{
+    width: 50px;
+    border-radius: 9px;
+    font-size: 17px;
+    padding: 3px;
+    border: 2px solid gray;
+    margin: 20px;
+}
+
+
+.order_opt{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} 
+
