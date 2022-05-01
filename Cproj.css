@@ -7,7 +7,9 @@
 
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 
 .navbar_lst{
@@ -286,9 +288,9 @@
 
 
 .contant{
-    max-width: 363px;   
+    max-width: 1070px;
     margin: auto;
-   
+    padding: 12px;
 }
 .contant_input{
     width: 100%;
@@ -296,7 +298,7 @@
     border-radius: 5px;
     font-size: 17px;
     margin: 8px auto;
-    padding: 2px 0px;
+    padding: 3px 7px;
 
 
 
@@ -423,4 +425,58 @@
     justify-content: center;
     
 } 
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    top: 26%;
+    right: 15px;
 
+
+}
+.line{
+    width: 30px;
+    background-color: #ffffff;
+    height: 3px;
+    margin: 3px 3px;
+
+
+}
+
+@media only screen and (max-width: 1270px){
+    .navbar_lst{
+        flex-direction: column;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+    #search{
+        max-width: 70%;
+        margin-right: 20px;
+
+    }
+    .navbar_2st{
+        width: 170px;
+    }   
+    .search_btn {
+        padding-right: 0px;
+    }
+    .burger{
+        display: block;
+
+    }
+
+    .ht-nav-resp{
+        height: 50px;
+
+    }
+    .visib-nav-resp{
+        opacity: 0%;
+
+    }
+
+
+
+
+}

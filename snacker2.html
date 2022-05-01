@@ -8,8 +8,8 @@
     <title>Snacker | aec store | Canteen of AEC</title>
 </head>
 <body>
-    <nav class="container  backgroundH ">
-        <ul class="navbar_lst  ">
+    <nav class="container  backgroundH ht-nav-resp">
+        <ul class="navbar_lst visib-nav-resp ">
             <div class="logo_img"><img src="https://tasteofnovascotia.com/wp-content/uploads/2015/02/The-Canteen-logo.png" alt="logo">
             </div>
             <li class="nav"><a href="Cproj.html">HOME</a></li>
@@ -18,11 +18,16 @@
             <li class="nav"><a href="https://aecagra.edu.in/">ABOUT CLG</a></li>
         </ul>
 
-        <div class="navbar_2st">
+        <div class="navbar_2st visib-nav-resp">
             <input type="text" name="search" id="search">
         </div>
-        <div class="search_btn btns">
+        <div class="search_btn btns visib-nav-resp">
             <button class="btn_sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
 
 
@@ -78,12 +83,14 @@
 
     </section>
     <section class="next_pg">
-        <button href="snacker.html" class="btn_nxt">Pre</button>     <button href="Cproj.html" class="btn_nxt">Go to Home</button>
+        <button href="snacker.html" class="btn_nxt" id="preshut" >Pre</button>     <button href="Cproj.html" class="btn_nxt" id="home" >Go to Home</button>
         
     </section>
    
     
     <footer> &copy copyright chetan 2002
     </footer>
+    <script src="script.js"></script>
+    <script src="script3s.js"></script>
 </body>
 </html>

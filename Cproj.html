@@ -10,10 +10,9 @@
 </head>
 
 <body id="Home">
-    <nav class="container  backgroundH ">
-        <ul class="navbar_lst  ">
-            <div class="logo_img"><img
-                    src="https://tasteofnovascotia.com/wp-content/uploads/2015/02/The-Canteen-logo.png" alt="logo">
+    <nav class="container  backgroundH ht-nav-resp">
+        <ul class="navbar_lst  visib-nav-resp">
+            <div class="logo_img"><img src="https://tasteofnovascotia.com/wp-content/uploads/2015/02/The-Canteen-logo.png" alt="logo">
             </div>
             <li class="nav"><a href="#Home">HOME</a></li>
             <li class="nav"><a href="#About">ABOUT</a></li>
@@ -22,11 +21,16 @@
             <li class="nav"><a href="https://aecagra.edu.in/">ABOUT CLG</a></li>
         </ul>
 
-        <div class="navbar_2st">
+        <div class="navbar_2st visib-nav-resp">
             <input type="text" name="search" id="search">
         </div>
-        <div class="search_btn btns">
+        <div class="search_btn btns visib-nav-resp">
             <button class="btn_sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </nav>
 
@@ -39,8 +43,8 @@
                     order...........................................................................</p>
                 
                 <div class="btns">
-                    <button href="snacker.html" class="Cant_btn" >SNACKER</button>
-                    <button href="canteen.html" class="Cant_btn">CANTEEN</button>
+                    <button class="Cant_btn" name="snackhut" id="snack_hut">SNACK_HUT</button>
+                    <button class="Cant_btn" name="canteen" id="cant_teen">CANTEEN</button>
                 </div>
                 
             </div>
@@ -53,7 +57,7 @@
         </div>
     </section>
     
-    <div class="second SnakerH s2rt backgroundH">
+    <div class="second SnakerH s2rt backgroundH" id="Services">
         <div class="heading">
             Best For You
         </div>
@@ -108,27 +112,29 @@
             </div>    
         </section>
     </section>    
-        <section class="ts3">
-            <div class="thirds">
-                <div class="heading">
-                     Contact Us
-                </div>
+    <section class="ts3" id="Contect">
+        <div class="thirds">
+            <div class="heading" >
+                 Contact Us
             </div>
+        </div>
 
-            <form action="">
-                <div class="contant" id="Contect">
-                    <input class="contant_input" type="text" name="name" id="name" placeholder="Enter Your Name">
-                    <input class="contant_input" type="Email" name="Email" id="Email" placeholder="Enter Your Email">
-                    <input class="contant_input" type="text" name="Phone" id="Phone" placeholder="Enter Your Phone">
-                    <textarea class="contant_input" name="text" id="" cols="30" rows="10" placeholder="text here"></textarea>
-                    <button class="btn_sbmt">Submit</button>
-                </div>    
-            </form> 
+        <form action="">
+            <div class="contant">
+                <input class="contant_input" type="text" name="name" id="name" placeholder="Enter Your Name">
+                <input class="contant_input" type="Email" name="Email" id="Email" placeholder="Enter Your Email">
+                <input class="contant_input" type="text" name="Phone" id="Phone" placeholder="Enter Your Phone">
+                <textarea class="contant_input" name="text" id="" cols="30" rows="10" placeholder="text here"></textarea>
+                <button class="btn_sbmt">Submit</button>
+            </div>    
+        </form> 
         
-        </section>
-        <footer> &copy copyright chetan 2002
-        </footer>
     </section>
+    <footer> copyright &copy chetan 2002 - All rights are reserved
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 
 </html>
