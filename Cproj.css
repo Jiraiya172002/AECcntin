@@ -203,7 +203,7 @@ html{
     max-width: 80%;
     justify-content: space-evenly;
     align-items: center;
-    margin: 11% auto;
+    margin: 15% auto;
 
 
    
@@ -216,15 +216,14 @@ html{
     max-width: 80%;
     justify-content: space-evenly;   
     align-items: center;
-    margin: 14% auto;
+    margin: 15% auto;
 
    
 }
 .ss2{
-    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    display: contents;
+    display: flex;
 }
 
 .bigtxt{
@@ -246,10 +245,14 @@ html{
     color: rgb(34, 34, 43);
 } 
 
-
+.thmb{
+    margin-left: 140px;
+}
 
 .thmb img{
-    width: 220px;
+    margin: 26px;
+    padding: 1px;
+    width: 210px;
     border: 3px solid grey;
     border-radius: 35px;
     display: flex;
@@ -467,6 +470,11 @@ html{
     color: black;
 }
 
+.order_inp{
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 @media only screen and (max-width: 1270px){
@@ -536,7 +544,42 @@ html{
         flex-direction: column-reverse;
         max-width: 100%;
     }
+    .order_sec{
+        flex-direction: column-reverse;
+    }
+    .order_img{
+        margin : 0px
+    }
+    .order_inp{
+        display: flex;
+        flex-direction: column;
+    }
+
 }    
+@media only screen and (max-width: 700px){
+    .ss2{
+        flex-direction: column-reverse
+    }
+    .thmb{
+        margin-left: 0%;
+    }
+}
+
+
+@media only screen and (max-width: 469px){
+    .order_img img {
+        width: 120px;
+    }
+    .bigtxt {
+        font-size: 25px;
+    }
+    .order_opt {
+        font-size: 15px;
+        flex-direction: column;
+    }
+}
+
+
 
 @media only screen and (max-width: 469px){
     .bigt{

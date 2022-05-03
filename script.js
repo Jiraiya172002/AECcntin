@@ -22,11 +22,14 @@ let search = document.getElementById('search')
 let search_btn = document.getElementById('search_btn')
 search.addEventListener("input", function() {
     let inputval = search.value.toUpperCase();
-    let items = document.getElementsByClassName('ss2')
+    let items = document.getElementsByClassName('item')
+    console.log(items)
     Array.from(items).forEach(function(element) {
-        let textm = element.getElementsByClassName("bigtxt")[0].innerText && element.getElementsByClassName("smalltxt")[0].innerText
-        if(textm.includes(inputval)){
-            element.style.display="contents"
+        let match1 = element.getElementsByTagName("p")[0].innerText.toUpperCase() 
+        let match2 = element.getElementsByTagName("p")[1].innerText.toUpperCase() 
+        // console.log(textm)
+        if(match1.includes(inputval) || match2.includes(inputval)){
+            element.style.display="flex"
         
         }
         else{
@@ -35,11 +38,6 @@ search.addEventListener("input", function() {
         }
 
     })
-    
-    // console.log("okk", inputval)
-    // console.log("okk", items)
-    // console.log("okk", element)
-    // console.log("okk", textm)
 
 
 })

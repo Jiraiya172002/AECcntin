@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,10 @@
     <link rel="stylesheet" href="Cproj.css">
     <title>Coffee | aec store | Canteen of AEC</title>
 </head>
+
 <body>
-    <nav class="container  backgroundH ">
-        <ul class="navbar_lst  ">
+    <nav class="container  backgroundH ht-nav-resp">
+        <ul class="navbar_lst visib-nav-resp ">
             <div class="logo_img"><img
                     src="https://tasteofnovascotia.com/wp-content/uploads/2015/02/The-Canteen-logo.png" alt="logo">
             </div>
@@ -20,34 +22,41 @@
             <li class="nav"><a href="https://aecagra.edu.in/">ABOUT CLG</a></li>
         </ul>
 
-        <div class="navbar_2st">
+        <div class="navbar_2st visib-nav-resp">
             <input type="text" name="search" id="search" placeholder="Search">
         </div>
-        <div class="search_btn btns">
+        <div class="search_btn btns visib-nav-resp">
             <button class="btn_sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </nav>
 
     <section class=" order_sec section_snaker  SnakerS ">
-        <section>
-            <section class="order_sec">
+        <section class="order_sec">
+            <div class="order_inp">
                 <div class="">
-                    <div class="">
-                        <p class="bigtxt">Coffee</p>
-                    </div>
-                    <div class=" order_opt">
-                        Coffee: <input type="number" name="" class="qunatity">
-                        Black coffee: <input type="number" name="" class="qunatity">
-                        Cold coffee: <input type="number" name="" class="qunatity">     
-                    </div>
+                    <p class="bigtxt">Coffee</p>
                 </div>
-                <div class="order_img"><img src="https://th.bing.com/th/id/R.3c67e53d682589dcb8ce02dd3ac1e20c?rik=LeUqj%2bnBd3%2f0WA&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2017%2f11%2f17%2f239445-coffee-coffee_beans-cup.jpg&ehk=%2bEd%2bhMjaHGMrExklwM9MNbALfkaDNqvDmS67gs%2bf2OA%3d&risl=&pid=ImgRaw&r=0" alt="thmb"></div>
-            </section>
+                <div class=" order_opt">
+                    Coffee: <input type="number" name="" class="qunatity">
+                    Black coffee: <input type="number" name="" class="qunatity">
+                    Cold coffee: <input type="number" name="" class="qunatity">
+                </div>
+            </div>
+            <div class="order_img"><img
+                    src="https://th.bing.com/th/id/R.3c67e53d682589dcb8ce02dd3ac1e20c?rik=LeUqj%2bnBd3%2f0WA&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2017%2f11%2f17%2f239445-coffee-coffee_beans-cup.jpg&ehk=%2bEd%2bhMjaHGMrExklwM9MNbALfkaDNqvDmS67gs%2bf2OA%3d&risl=&pid=ImgRaw&r=0"
+                    alt="thmb"></div>
+        </section>
 
-            <section class="next_pg">
-                <button href="" class="btn_nxt">Order Now</button>    
-            </section>
-       </section>
+        <section class="next_pg">
+            <button href="" class="btn_nxt">Order Now</button>
+        </section>
     </section>
+    <script src="script.js"></script>
 </body>
+
 </html>
