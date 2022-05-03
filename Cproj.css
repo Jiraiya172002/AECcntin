@@ -63,9 +63,14 @@ html{
 }
 
 .btn_sm{
+    border: 2px solid white;
+    border-radius: 7px;
+    margin: auto;
+    background: none;
+    color: #ffffff;
+    padding: 4px 5px;
     border-radius: 5px;
     font-size: 10.5px;
-    padding: 4px;
     cursor: pointer;
 }
 
@@ -150,20 +155,12 @@ html{
     font-family: 'Ubuntu', sans-serif;
 }
 
-.btn_sm{
-    border: 2px solid white;
-    border-radius: 7px;
-    margin: auto;
-    background: none;
-    color: #ffffff;
-    padding: 4px 5px;
-}
 
 
-.btns{
-     display: flex;
-    /* align-content: center; */
-    justify-content: center;
+.btns1{
+    display: flex;
+   /* align-content: center; */
+   justify-content: center;
 }
 .Cant_btn{
     color: #ffffff;
@@ -178,7 +175,7 @@ html{
     border: 2px solid #ffffff;
 
 }
-.btns :hover{
+.btns1 :hover{
     color: black;
     background-color: white;
 }
@@ -206,7 +203,6 @@ html{
     max-width: 80%;
     justify-content: space-evenly;
     align-items: center;
-    margin: auto;
     margin: 11% auto;
 
 
@@ -220,7 +216,7 @@ html{
     max-width: 80%;
     justify-content: space-evenly;   
     align-items: center;
-    margin: auto;
+    margin: 14% auto;
 
    
 }
@@ -228,7 +224,7 @@ html{
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-
+    display: contents;
 }
 
 .bigtxt{
@@ -245,7 +241,7 @@ html{
     
 } 
  
-.ss2 a{
+.allpara a{
     text-decoration: none;
     color: rgb(34, 34, 43);
 } 
@@ -312,6 +308,11 @@ html{
     cursor: pointer;   
 
 }
+.btn_sbmt :hover{
+    background-color: rgb(150, 150, 150);
+
+}
+
 
 .navbar_2st :hover{
     background-color: rgb(224, 224, 224);
@@ -434,14 +435,39 @@ html{
 
 
 }
+.cross{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    top: 26%;
+    right: 15px;
+    rotate: 45;
+
+}
+.logo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .line{
     width: 30px;
     background-color: #ffffff;
     height: 3px;
     margin: 3px 3px;
+}
+
+.heading2{
+    font-size: xx-large;
+    color: black;
+
 
 
 }
+.abtxt{
+    color: black;
+}
+
+
 
 @media only screen and (max-width: 1270px){
     .navbar_lst{
@@ -450,6 +476,8 @@ html{
 
     .container{
         flex-direction: column;
+        height: 300px;
+        transition: all 0.7s ease-out;
     }
     #search{
         max-width: 70%;
@@ -458,13 +486,13 @@ html{
     }
     .navbar_2st{
         width: 170px;
+        padding-top: 5px;
     }   
     .search_btn {
         padding-right: 0px;
     }
     .burger{
         display: block;
-
     }
 
     .ht-nav-resp{
@@ -475,8 +503,46 @@ html{
         opacity: 0%;
 
     }
+}
 
 
 
 
+
+
+
+@media only screen and (max-width: 1080px){
+    .s2rt{
+        flex-direction: column-reverse;
+        height: auto;
+
+    }
+    .s2lt{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .btns1{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 140px;
+    }
+    .fs1{
+        height: 50vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .f1{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+}    
+
+@media only screen and (max-width: 469px){
+    .bigt{
+        font-size: x-large;
+    }
+    .smallt {
+        font-size: x-small;
+    }
 }
